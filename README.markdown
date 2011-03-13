@@ -3,7 +3,7 @@ MenuBundle
 
 The MenuBundle provides object oriented menus for your Symfony2 project.
 
-    use Knplabs\MenuBundle\MenuItem;
+    use Knplabs\Bundle\MenuBundle\MenuItem;
 
     $menu = new MenuItem('My menu');
     $menu->addChild('Home', $router->generate('homepage'));
@@ -60,7 +60,7 @@ file is usually located at `app/AppKernel`:
     {
         $bundles = array(
             // ...
-            new Knplabs\MenuBundle\KnplabsMenuBundle(),
+            new Knplabs\Bundle\MenuBundle\KnplabsMenuBundle(),
         );
     )
 
